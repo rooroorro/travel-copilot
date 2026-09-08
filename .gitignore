@@ -1,0 +1,33 @@
+# Python / development
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Secrets and private trip inputs / outputs
+.env
+.env.*
+!.env.example
+/private/
+/input/
+/output/
+/outputs/
+/travel-pack/
+/trip.json
+/creative_brief.json
+/trip*.html
+/trip*.ics
+
+# Distribution artifacts; public examples remain tracked
+/dist/
+*.zip

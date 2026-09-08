@@ -1,0 +1,2 @@
+# Calendar exports deliberately retain RFC-style CRLF bytes.
+*.ics -text whitespace=cr-at-eol
