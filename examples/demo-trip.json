@@ -1,0 +1,265 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "status": "approved",
+    "version": "1.0",
+    "updatedAt": "2026-09-08T10:00:00+08:00",
+    "language": "zh-CN",
+    "theme": "urban-neon"
+  },
+  "trip": {
+    "title": "东京 · 3日城市漫游",
+    "subtitle": "浅草、涩谷与镰仓 · 交互演示 / 非真实预订",
+    "destination": "Tokyo, Japan",
+    "startDate": "2026-10-02",
+    "endDate": "2026-10-04",
+    "timezone": "Asia/Tokyo",
+    "summary": "三人轻松节奏的东京短途旅行，重点保留交通缓冲与晚间自由时间。",
+    "heroImage": ""
+  },
+  "travelers": [
+    {
+      "id": "traveler-a",
+      "name": "旅人 A",
+      "role": "organizer"
+    },
+    {
+      "id": "traveler-b",
+      "name": "旅人 B",
+      "role": "traveler"
+    },
+    {
+      "id": "traveler-c",
+      "name": "旅人 C",
+      "role": "traveler"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-10-02",
+      "title": "抵达与新宿夜景",
+      "area": "Shinjuku",
+      "tips": [
+        "抵达日避免排太满"
+      ],
+      "events": [
+        {
+          "id": "d1-arrive",
+          "start": "14:00",
+          "end": "15:00",
+          "title": "抵达羽田机场",
+          "type": "arrival",
+          "description": "取行李后前往市区。",
+          "location": {
+            "name": "Haneda Airport",
+            "address": "Haneda Airport, Tokyo",
+            "lat": 35.5494,
+            "lng": 139.7798
+          },
+          "priority": "P0",
+          "assignedTo": [
+            "traveler-a",
+            "traveler-b",
+            "traveler-c"
+          ]
+        },
+        {
+          "id": "d1-hotel",
+          "start": "16:10",
+          "end": "17:00",
+          "title": "酒店入住",
+          "type": "hotel",
+          "description": "放行李，休息一下。",
+          "location": {
+            "name": "Shinjuku Station",
+            "address": "Shinjuku, Tokyo",
+            "lat": 35.6909,
+            "lng": 139.7003
+          },
+          "priority": "P1",
+          "assignedTo": [
+            "traveler-a",
+            "traveler-b",
+            "traveler-c"
+          ]
+        },
+        {
+          "id": "d1-night",
+          "start": "19:00",
+          "end": "21:00",
+          "title": "新宿夜间散步",
+          "type": "sightseeing",
+          "description": "晚餐后自由散步。",
+          "location": {
+            "name": "Kabukicho",
+            "address": "Kabukicho, Shinjuku, Tokyo",
+            "lat": 35.6941,
+            "lng": 139.7027
+          },
+          "priority": "P2"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "title": "浅草 → 秋叶原 → 涩谷",
+      "area": "Tokyo",
+      "tips": [
+        "午后跨城移动预留 20 分钟缓冲"
+      ],
+      "events": [
+        {
+          "id": "d2-asakusa",
+          "start": "09:00",
+          "end": "10:45",
+          "title": "浅草寺",
+          "type": "sightseeing",
+          "description": "早上先逛寺院与仲见世。",
+          "location": {
+            "name": "Senso-ji",
+            "address": "Asakusa, Taito City, Tokyo",
+            "lat": 35.7148,
+            "lng": 139.7967
+          },
+          "priority": "P2"
+        },
+        {
+          "id": "d2-akiba",
+          "start": "11:30",
+          "end": "13:30",
+          "title": "秋叶原",
+          "type": "shopping",
+          "description": "午餐与兴趣店铺。",
+          "location": {
+            "name": "Akihabara Station",
+            "address": "Akihabara, Tokyo",
+            "lat": 35.6984,
+            "lng": 139.7731
+          },
+          "priority": "P2"
+        },
+        {
+          "id": "d2-shibuya",
+          "start": "15:00",
+          "end": "18:00",
+          "title": "涩谷漫步",
+          "type": "sightseeing",
+          "description": "十字路口、商场与自由时间。",
+          "location": {
+            "name": "Shibuya Crossing",
+            "address": "Shibuya, Tokyo",
+            "lat": 35.6595,
+            "lng": 139.7005
+          },
+          "priority": "P2"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "title": "镰仓一日与返程准备",
+      "area": "Kamakura",
+      "tips": [
+        "返程前检查行李与证件"
+      ],
+      "events": [
+        {
+          "id": "d3-kamakura",
+          "start": "09:30",
+          "end": "15:30",
+          "title": "镰仓散步",
+          "type": "daytrip",
+          "description": "寺社与海边轻松路线。",
+          "location": {
+            "name": "Kamakura Station",
+            "address": "Kamakura, Kanagawa",
+            "lat": 35.319,
+            "lng": 139.5504
+          },
+          "priority": "P1"
+        },
+        {
+          "id": "d3-pack",
+          "start": "19:30",
+          "end": "20:00",
+          "title": "整理行李与返程确认",
+          "type": "prep",
+          "description": "确认护照、交通与次日出发时间。",
+          "priority": "P0",
+          "assignedTo": [
+            "traveler-a",
+            "traveler-b",
+            "traveler-c"
+          ]
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "id": "passport",
+      "title": "护照/证件",
+      "category": "documents",
+      "assignedTo": [
+        "traveler-a",
+        "traveler-b",
+        "traveler-c"
+      ],
+      "due": "2026-10-01"
+    },
+    {
+      "id": "tickets",
+      "title": "集中保管交通与门票二维码",
+      "category": "booking",
+      "assignedTo": [
+        "traveler-a"
+      ],
+      "due": "2026-10-01"
+    }
+  ],
+  "reminders": [
+    {
+      "id": "airport-leave",
+      "title": "出发去机场",
+      "datetime": "2026-10-02T08:00:00+08:00",
+      "priority": "P0",
+      "alarmMinutes": [
+        120,
+        30,
+        10
+      ],
+      "assignedTo": [
+        "traveler-a",
+        "traveler-b",
+        "traveler-c"
+      ],
+      "description": "请同时核实实时路况与航班状态。"
+    },
+    {
+      "id": "pack-return",
+      "title": "整理行李与返程确认",
+      "datetime": "2026-10-04T19:30:00+09:00",
+      "priority": "P0",
+      "alarmMinutes": [
+        60,
+        15
+      ],
+      "assignedTo": [
+        "traveler-a",
+        "traveler-b",
+        "traveler-c"
+      ],
+      "description": "检查证件、充电设备和返程交通。"
+    }
+  ],
+  "planB": [
+    {
+      "id": "rain-d2",
+      "trigger": "heavy-rain",
+      "forDate": "2026-10-03",
+      "replacementEventIds": []
+    }
+  ],
+  "sources": [],
+  "disclaimer": "本行程仅供软件交互演示，非真实预订；示例时间、交通与地点未核验。正式出行请以官方渠道为准。"
+}
