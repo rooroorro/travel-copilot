@@ -1,6 +1,6 @@
 ---
 name: travel-copilot
-description: Turn a rough travel idea or an existing itinerary from text/PDF/images/files into a reviewed, complete, structured trip plan and then package the user-approved plan as a mobile-first interactive single-file HTML travel companion plus optional ICS calendar reminders. Use for trip planning, itinerary audit/completion, travel-plan visualization, interactive travel HTML, offline-friendly trip pages, group travel handoff, and reminder installation. Platform-agnostic: works with Claude Code, Codex, WorkBuddy and other agents that can read SKILL.md; use capability fallbacks when file reading, web research, or script execution is unavailable.
+description: "Turn a rough travel idea or an existing itinerary from text/PDF/images/files into a reviewed, complete, structured trip plan and then package the user-approved plan as a mobile-first interactive single-file HTML travel companion plus optional ICS calendar reminders. Use for trip planning, itinerary audit/completion, travel-plan visualization, interactive travel HTML, offline-friendly trip pages, group travel handoff, and reminder installation. Platform-agnostic: works with Claude Code, Codex, WorkBuddy and other agents that can read SKILL.md; use capability fallbacks when file reading, web research, or script execution is unavailable."
 license: MIT
 compatibility: Python 3.9+ recommended for deterministic renderer/ICS/validation; browser output uses vanilla HTML/CSS/JS and optional online Leaflet tiles.
 metadata:
